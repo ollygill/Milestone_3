@@ -1,0 +1,26 @@
+---
+title: "Milestone #3 - Olly Gill"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(readr)
+
+athlete_events <- read_csv("athlete_events.csv")
+```
+
+### Olympic Athletes: History & Results
+
+#### Overview of the Data:
+My dataset comes from a csv file on Kaggle found here: https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/version/1. The data set contains information on Olympic athletes ranging from Athens in 1896 to Rio in 2016. Kaggle collected most of the data from www.sports-reference.com in May of 2018. The dataset is organized into 270,960 rows of atheltes and 15 columns that contain information about the athlete including ID, Name, Sex, Age, Height, Weight, Team, National Olympic Committee Code, Games, Year, Season, City, Sport, Event, and Medal. This dataset is very clean and relatively complete with only some data from athletes (like their height or weight) missing. I plan on keeping all of the data in this dataset although I do not plan on using every column of data available per athlete. Right now I am going to start trying to figure out which specific columns of data are the most interesting to me and seeing how I want to depict the relationships between them!
+
+#### What I Plan to Do With the Data:
+For use of the data, I read in the csv file and stored it as "athlete_events". This way as I go forward with my project I can just refer to athlete_events whenever I need to call up certain parts of the dataset. I am still unsure if I want to add in data from the 2018 games in Sochi or just leave the data set from the first games in 1896 running up through the games in 2016.
+
+Going forward with the dataset and into the beginning stages of forming the project, I want to be able to use the data to help illustrate the Olympics and how the pool of atheltes is actually made up. I want to show the percentage of male vs. female athletes, if there is a certain type of athlete who usually wins the Gold or other medals for a particular season/event, which games have the largest amount of female vs. male athletes, which city had a particular breakdown of athletes (ie. mostly older or heavier etc.), and many other pressing questions that I think about when I watch the Olympics every year. Of course I want to make my questions much more narrow and concise but as I begin thinking about the data and the project I want to do, I am still unsure about what I want to ask and how I want to depict the results. I also plan on looking through other data sets as well to see if I can find other data on athletes either in the 2018 games or in the games that I have included but lack data from.
+
+I definitely want to be able to create a map in my project with pin points on the different locations that the games were held and then have the person looking at the data be able to click on the specific locations on the map and see the data that corresponds to that event. Additionally, on a separate tab of the project I want the person looking at the data to be able to select different categories from a series of pull down menus and be able to see the data reflected on some time of graph/chart. There were several final projects that I looked through that included these interactive plots and that is something I definitely want to make sure my project includes.
+
+Right now I have only begun to sort through the data and look at some of the cells in the table, but over the next couple days I plan looking at the data set in much more detail so I can not only figure out what kinds of data I may be missing, but also what kinds of questions I want to answer with the data avilable. Overall, I am very excited to begin this project because it is a topic I am so curious to learn more about!
